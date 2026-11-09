@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Change March</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #0f0f0f;
+      color: #e8e8e8;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(5rem, 12vw, 8rem);   
+      letter-spacing: 0.04em;
+      line-height: 0.95;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: start;
+      margin-bottom: 5rem;
+    }
+
+    .poster-side img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .protest-statement {
+      font-size: 1.35rem;
+      font-weight: 600;
+      font-style: italic;
+      color: #ff4d4d;
+      margin-bottom: 1.8rem;
+      line-height: 1.4;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      color: #ffffff;
+      margin-bottom: 2.5rem;
+      max-width: 520px;
+    }
+
+    .event-box {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 1.5rem 1.8rem;
+      max-width: 380px;
+    }
+
+    .event-box h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #888;
+      margin-bottom: 0.8rem;
+    }
+
+    .event-box p {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 0.3rem;
+    }
+
+    .event-box .time {
+      color: #ff4d4d;
+      font-weight: 700;
+    }
+
+   
+    .gallery {
+      margin-top: 1rem;
+    }
+
+    .gallery h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    
+    @media (max-width: 850px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .poster-side {
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid img {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    
+    <h1>Climate Change March</h1>
+
+    
+    <section class="hero">
+      
+      
+      <div class="poster-side">
+        <img src="poster.jpg" alt="Climate Change March poster">
+      </div>
+
+     
+      <div class="content-side">
+        <p class="protest-statement">
+          How dare you continue to look away while ecosystems collapse?
+        </p>
+
+        <p class="description">
+          The climate crisis is no longer a distant threat — it is here. Rising temperatures, 
+          extreme weather, collapsing ecosystems, and mass extinctions are already underway. 
+          Scientists warn we have a rapidly closing window to limit warming to 1.5°C, yet 
+          global emissions continue to rise. Entire communities face displacement, food insecurity, 
+          and loss of livelihoods. Young people inherit a planet in crisis while decision-makers 
+          delay meaningful action. This is not just an environmental issue; it is a matter of 
+          justice, equity, and survival. The time for empty promises is over. We must demand 
+          immediate, systemic change before tipping points make recovery impossible.
+        </p>
+
+        <div class="event-box">
+          <h2>Event Details</h2>
+          <p>Climate Change March</p>
+          <p>Times Square, NYC</p>
+          <p class="time">07 November 2026 · 1:00pm</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="gallery">
+      <h3>Moments from the Movement</h3>
+      <div class="gallery-grid">
+        <img src="image1.jpg" alt="Climate protest image 1">
+        <img src="image2.jpg" alt="Climate protest image 2">
+        <img src="image3.jpg" alt="Climate protest image 3">
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
